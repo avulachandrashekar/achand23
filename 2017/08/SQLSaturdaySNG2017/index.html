@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>SQLSaturdaySingapore-2017 | Learn with Chandra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This was my first SQLSaturday and my first ever TechTalk event, it was worth the time to be honest. The speakers were amazing and the sessions were interactive and informative. So, the first session w">
+<meta name="keywords" content="SQLSaturday">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SQLSaturdaySingapore-2017">
+<meta property="og:url" content="http://yoursite.com/2017/08/SQLSaturdaySNG2017/index.html">
+<meta property="og:site_name" content="Learn with Chandra">
+<meta property="og:description" content="This was my first SQLSaturday and my first ever TechTalk event, it was worth the time to be honest. The speakers were amazing and the sessions were interactive and informative. So, the first session w">
+<meta property="og:image" content="http://yoursite.com/2017/08/images/QueryStore.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/08/images/EnablingQueryStore.jpg">
+<meta property="og:updated_time" content="2017-08-27T16:59:43.169Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SQLSaturdaySingapore-2017">
+<meta name="twitter:description" content="This was my first SQLSaturday and my first ever TechTalk event, it was worth the time to be honest. The speakers were amazing and the sessions were interactive and informative. So, the first session w">
+<meta name="twitter:image" content="http://yoursite.com/2017/08/images/QueryStore.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="Learn with Chandra" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Learn with Chandra</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Make learning a habit.</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-SQLSaturdaySNG2017" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/SQLSaturdaySNG2017/" class="article-date">
+  <time datetime="2017-08-27T12:55:10.000Z" itemprop="datePublished">2017-08-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      SQLSaturdaySingapore-2017
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>This was my first SQLSaturday and my first ever TechTalk event, it was worth the time to be honest. The speakers were amazing and the sessions were interactive and informative.</p>
+<p>So, the first session was about <strong>What does it take to become Data Scientist</strong>. The speaker <em>Mani</em> did a good job and went over <strong>R language</strong> and what should one do if he\she aspires to go into data science field.</p>
+<p>The second session was on <strong>CCI (Clustered Column Index) and improvements in SQLServer2016</strong>, this session was interesting and the most important take away was that the DataLoad in SQLServer 2016 should be done in <strong>BatchMode with row size more then 102400</strong>. 102400 is the magic number here. Also, the speaker stressed on the point that always target the compressed RG (row-group) first, before going into DeltaRowGroup.</p>
+<p>This was followed by a session on <strong>Microsoft Azure’s COSMOS DB</strong>. I have some details below.</p>
+<p>The next speaker was from DevOps area, he spoke about how can we automate our build process and <strong>use Azure services to achieve an end-2-end automation from code check-in to build release on UAT server</strong>.</p>
+<p>The last session was on <strong>QueryStore, the latest feature in SQLServer2016</strong>. the session was interactive, but I really did not understand the purpose of this new feature. This was a bit like, selling out stuff in new package.<br>You can find the details below.</p>
+<h2 id="Microsoft-Azure’s-COSMOS-DB"><a href="#Microsoft-Azure’s-COSMOS-DB" class="headerlink" title="Microsoft Azure’s COSMOS DB"></a>Microsoft Azure’s COSMOS DB</h2><h3 id="What-is-COSMOS-DB"><a href="#What-is-COSMOS-DB" class="headerlink" title="What is COSMOS DB"></a>What is COSMOS DB</h3><p>COSMOS DB is a multi-design and multi-model database, it is <em>essentially</em> saying that it is one stop shop for all kind of No-SQL databases. When configuring, one has to specify the type of db modelling required i.e Graph, KeyValue or Document based on application requirement. Currently, we can classify NoSQL database into following categories</p>
+<ul>
+<li>KeyValue DB (Other products in Market =&gt; <a href="https://redis.io/" target="_blank" rel="external">Redis DB</a>)</li>
+<li>Document DB (Other products =&gt; <a href="https://www.mongodb.com/" target="_blank" rel="external">Mongo DB</a>)</li>
+<li>Graph DB (Other Products =&gt; <a href="https://neo4j.com/" target="_blank" rel="external">Neo4J</a>)</li>
+<li>ColumnStore DB (Other Products in Market =&gt; <a href="http://cassandra.apache.org/" target="_blank" rel="external">Cassendra</a>)</li>
+</ul>
+<h3 id="How-can-I-consume-Cosmos-DB-in-my-application"><a href="#How-can-I-consume-Cosmos-DB-in-my-application" class="headerlink" title="How can I consume Cosmos DB in my application."></a>How can I consume Cosmos DB in my application.</h3><p>Cosmos DB is exposed as an API from Azure platform, so you can programme the application to these API’s.</p>
+<h3 id="What-is-required-to-create-your-first-Cosmos-Graph-DB"><a href="#What-is-required-to-create-your-first-Cosmos-Graph-DB" class="headerlink" title="What is required to create your first Cosmos Graph DB"></a>What is required to create your first Cosmos Graph DB</h3><p>You just need a MSDN account. Yes, you heard it right, that is it. Login to Microsoft Azure <a href="https://portal.azure.com" target="_blank" rel="external">Portal</a> and start playing with Cosmos DB. Most importantly you will get <em>free</em> 200 credit points, which you can use to host a service (Cosmos DB)</p>
+<h3 id="Why-do-I-care-when-I-have-inhouse-get-inhouse-solution-from-other-products"><a href="#Why-do-I-care-when-I-have-inhouse-get-inhouse-solution-from-other-products" class="headerlink" title="Why do I care, when I have inhouse get inhouse solution from other products"></a>Why do I care, when I have inhouse get inhouse solution from other products</h3><p>Microsoft Azure COSMOS DB provides you with many features, one of them being on-demand replication.<br>What do I mean by on-demand replication. So I have to setup my application from different region, then setting up<br>an inhouse solution will be <em>cost</em> and <em>time</em> inefficient. Microsoft Azure provides you infrastruture through out the world. So you can connect to your nearest data-center replicate your services\db.</p>
+<h2 id="QueryStore-More-to-come-on-this"><a href="#QueryStore-More-to-come-on-this" class="headerlink" title="QueryStore (More to come on this)"></a>QueryStore (More to come on this)</h2><h3 id="What-is-Query-Store"><a href="#What-is-Query-Store" class="headerlink" title="What is Query Store"></a>What is Query Store</h3><p>This is a brand new feature introdcued with SQLServer 2016. This is optional feature that can be turned on to monitor the database performance.</p>
+<p>MSDN Link for further<br><a href="https://blogs.msdn.microsoft.com/mvpawardprogram/2016/03/29/sql-server-2016-query-store/" target="_blank" rel="external">Query Store</a></p>
+<p>QueryStore is created in <strong>main mdf</strong> file. It persists the Execution Plan and Query Metrices. </p>
+<h3 id="How-does-it-work"><a href="#How-does-it-work" class="headerlink" title="How does it work"></a>How does it work</h3><p><img src="../images/QueryStore.jpg" alt="How does Query Store Work"></p>
+<h3 id="How-to-configure-query-store-for-your-database"><a href="#How-to-configure-query-store-for-your-database" class="headerlink" title="How to configure query store for your database"></a>How to configure query store for your database</h3><p><img src="../images/EnablingQueryStore.jpg" alt="Query Store Configuration"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/08/SQLSaturdaySNG2017/" data-id="cj6uul1fm00007wt3hvtb9qq2" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQLSaturday/">SQLSaturday</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/SQLSaturday/">SQLSaturday</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/SQLSaturday/" style="font-size: 10px;">SQLSaturday</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/08/SQLSaturdaySNG2017/">SQLSaturdaySingapore-2017</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 Avula Chandra Shekar<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
